@@ -15,8 +15,8 @@ export default function Home() {
       <Navbar />
       <Carousel />
       <Cards/>
-      {/* <EditorsPick /> */}
-      {/* <FeaturedProducts /> */}
+      <EditorsPick />
+      <FeaturedProducts />
       <Footer />
     </div>
   );
