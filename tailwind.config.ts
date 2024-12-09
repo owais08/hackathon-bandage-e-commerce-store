@@ -9,8 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
+        // Background-Colors
+        background: "#FAFAFA",
+        lightBg: "#FFFFFF",
+        darkBg: "#252B42",
         foreground: "var(--foreground)",
+
+        // Text-Colors
+        secondTxtClr: "#737373",
+        txtClr: "#252B42",
+        lightTxtClr: "#FFFFFF",
+
+        // Sections-Colors
+        primaryClr: "#23A6F0",
+        secondaryClr: "#23856D",
+        alertClr: "#E77C40",
+        mutedClr: "#BDBDBD",
+        successClr: "#2DC071",
+        redClr: "#E74040",
       },
     },
   },
