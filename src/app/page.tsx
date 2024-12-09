@@ -1,6 +1,5 @@
 import Header from "./components/header";
 import Navbar from "./components/navbar";
-import Hero from "./components/hero";
 import EditorsPick from "./components/EditorsPick";
 import FeaturedProducts from "./components/FeaturedProducts";
 import Footer from "./components/footer";
@@ -14,14 +13,11 @@ export default function Home() {
     <div>
       <Header />
       <Navbar />
-      {/* <Hero /> */}
       <Carousel />
-
       <Cards/>
-
       {/* <EditorsPick /> */}
       {/* <FeaturedProducts /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
