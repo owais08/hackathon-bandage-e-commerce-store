@@ -2,7 +2,7 @@ import Link from "next/link";
 import UserMenu from "./userMenu";
 
 const Navbar = () => {
-  let navItems = [
+  const navItems = [
     {
       name: "Home",
       link: "#",
