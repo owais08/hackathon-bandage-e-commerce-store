@@ -14,7 +14,7 @@ export default function Home() {
       <Header />
       <Navbar />
       <Carousel />
-      <Cards/>
+      <Cards />
       <EditorsPick />
       <FeaturedProducts />
       <Footer />
