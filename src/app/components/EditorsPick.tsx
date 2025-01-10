@@ -7,7 +7,7 @@ const EditorsPick = () => {
         {/* heading & paragraph con */}
         <div className=" xs:w-full xs:h-auto xs:flex xs:flex-col xs:items-center xs:space-y-[10px] xs:text-center       lg:w-[607px] lg:h-[62px] lg:ml-[221.5px] lg:mt-[80px] lg:flex lg:flex-col lg:items-center lg:justify-between ">
           <h1 className=" xs:w-[187px]       text-[24px] font-bold h-[32px] text-txtClr      lg:w-[187px] ">
-            EDITOR’S PICK
+            EDITOR&apos;S PICK
           </h1>
           <p className=" xs:w-[196px] xs:h-[40px]       text-[14px] font-normal text-secondTxtClr     lg:w-[342px] lg:h-[20px] ">
             Problems trying to resolve the conflict between{" "}
