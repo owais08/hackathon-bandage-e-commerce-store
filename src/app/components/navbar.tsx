@@ -7,7 +7,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { BiMenuAltRight } from "react-icons/bi";
 
 const Navbar = () => {
-  let navItems = [
+  const navItems = [
     {
       name: "Home",
       link: "#",
@@ -34,7 +34,7 @@ const Navbar = () => {
       link: "#",
     },
   ];
-  let mobNavItems = [
+  const mobNavItems = [
     {
       name: "Home",
       link: "#",
