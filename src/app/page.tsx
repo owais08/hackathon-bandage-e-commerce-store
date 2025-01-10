@@ -1,22 +1,22 @@
 import Header from "./components/header";
-import Navbar from "./components/navbar";
-import EditorsPick from "./components/EditorsPick";
-import FeaturedProducts from "./components/FeaturedProducts";
+import Hero from "./components/hero";
+import EditorsPick from "./components/editorsPick";
+import FeaturedProducts from "./components/featuredProducts";
+import PromoProduct from "./components/prormoProduct";
+import Article from "./components/article";
+import Posts from "./components/post";
 import Footer from "./components/footer";
-import Carousel from "./components/carousel";
-import Cards from "./components/cards";
-
-// import Head from 'next/head';
 
 export default function Home() {
   return (
     <div>
       <Header />
-      <Navbar />
-      <Carousel />
-      <Cards />
+      <Hero />
       <EditorsPick />
       <FeaturedProducts />
+      <PromoProduct />
+      <Article />
+      <Posts />
       <Footer />
     </div>
   );

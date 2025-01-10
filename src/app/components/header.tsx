@@ -1,57 +1,68 @@
 import { LiaPhoneSolid } from "react-icons/lia";
 import { BsEnvelope } from "react-icons/bs";
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaFacebook, FaTwitter } from "react-icons/fa";
+import Link from "next/link";
+import Navbar from "./navbar";
 
 const Header = () => {
   return (
-    <header
-      className={`bg-darkBg text-lightTxtClr w-full p-4 font-bold text-[14px]`}
-    >
-      <div className="container mx-auto flex items-center justify-between  w-[1439px] h-[58px]">
-        <div className="flex space-x-6 w-[421px] h-[46px]">
-          <span className="flex items-center gap-1 ">
-            <i className=" flex items-center fas fa-phone-alt text-xl w-[16px] h-[16px]">
-              <LiaPhoneSolid />
-            </i>{" "}
-            (225) 555-0118
-          </span>
-          <span className="flex items-center gap-1">
-            <i className="fas fa-envelope">
-              <BsEnvelope />
-            </i>{" "}
-            michelle.rivera@example.com
-          </span>
+    // main header & navbar con
+    <div className="lg:space-y-[12px]">
+      {/* header con */}
+      <header className="bg-darkBg text-lightTxtClr xs:hidden lg:flex items-center justify-between w-full h-[58px] ">
+        {/* contact info con */}
+        <div className=" flex items-center gap-[10px] w-[421px] h-[46px] ml-[24px]">
+          {/* phone-num con */}
+          <div className=" flex items-center justify-center gap-[5px] w-[143px] h-[44px]">
+            {/* phone-icon */}
+            <LiaPhoneSolid />
+            {/* phone-num */}
+            <span className=" text-[14px] font-bold">(225) 555-0118</span>
+          </div>
+
+          {/* email con */}
+          <div className=" flex items-center justify-center gap-[5px] w-[268px] h-[44px] ">
+            {/* email-icon */}
+            <BsEnvelope />
+            {/* email */}
+            <span className=" text-[14px] font-bold">
+              michelle.rivera@example.com
+            </span>
+          </div>
         </div>
 
-        <div className="flex items-center text-center text-sm w-[343px] h-[44px]">
-          Follow Us and get a chance to win 80% off
+        {/* news-letter con */}
+        <div className="  flex items-center justify-center w-[343px] h-[44px] ">
+          <p className="text-[14px] font-bold">
+            Follow Us and get a chance to win 80% off
+          </p>
         </div>
 
-        <div className="flex items-center space-x-4 w-[235px] h-[46px]">
-          <span>Follow Us :</span>
-          <a href="#" className="hover:underline">
-            <i className="fab fa-instagram">
+        {/* social-network con */}
+        <div className=" flex items-center justify-evenly w-[235px] h-[46px] mr-[24px]">
+          <span className=" flex text-[14px] font-bold">Follow Us&ensp; :</span>
+
+          {/* social-icons con */}
+          <div className=" flex items-center justify-around w-[120px] h-[26px]">
+            <Link href={"#"}>
               <FaInstagram />
-            </i>
-          </a>
-          <a href="#" className="hover:underline">
-            <i className="fab fa-youtube">
+            </Link>
+            <Link href={"#"}>
               <FaYoutube />
-            </i>
-          </a>
-          <a href="#" className="hover:underline">
-            <i className="fab fa-facebook-f">
+            </Link>
+            <Link href={"#"}>
               <FaFacebook />
-            </i>
-          </a>
-          <a href="#" className="hover:underline">
-            <i className="fab fa-twitter">
+            </Link>
+            <Link href={"#"}>
               <FaTwitter />
-            </i>
-          </a>
+            </Link>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+
+      {/* navbar component */}
+      <Navbar />
+    </div>
   );
 };
 
